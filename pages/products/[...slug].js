@@ -1,14 +1,14 @@
 import { useRouter } from 'next/router';
 
-function UserPost() {
+function Products() {
   const router = useRouter();
 
   console.log(router.query);
 
   return (
     <div>
-      <h2>User Post</h2>
+      <h2>Products</h2>
     </div>
   );
 }
-export default UserPost;
+export default Products;

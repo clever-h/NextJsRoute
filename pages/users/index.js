@@ -15,7 +15,14 @@ function UserPage() {
       <ul>
         {users.map((item) => (
           <li key={item.id}>
-            <Link href={`/users/${item.id}`}>{item.username}</Link>
+            <Link
+              href={{
+                pathname: '/users/[id]',
+                query: { id: item.id, username: item.username },
+              }}
+            >
+              {item.username}
+            </Link>
           </li>
         ))}
       </ul>

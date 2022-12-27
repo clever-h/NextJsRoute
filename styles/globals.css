@@ -12,3 +12,45 @@ a {
     text-decoration : none;
 }
     
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ color: #212121; width: 50%; align-items:center; background:rgb(255, 255, 255); font-family: 'Arvo', serif; margin-left: auto;
+    margin-right: auto;
+    width: 25em 
+}
+
+.page_404  img{  align-self: center;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 500px;
+    background-position: center;
+
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+    font-size:80px;
+     text-align: center;
+      color: rgb(31, 29, 29)!important;
+ 
+ }
+ 
+  .four_zero_four_bg h3{
+       font-size:80px;
+       text-align: center;
+       }
+       
+       .link_404{      
+  color: #fff!important;
+    padding: 10px 90px;
+    text-align: center;
+    background: #2b302b;
+    margin: 40px 50px;
+    display: inline-block;
+}
+  .contant_box_404{ text-align: center;}

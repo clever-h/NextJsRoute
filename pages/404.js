@@ -1,4 +1,4 @@
-export default function Page404() {
+function Page404() {
   return (
     <section class="page_404">
       <div class="container">
@@ -10,12 +10,12 @@ export default function Page404() {
               </div>
 
               <div class="contant_box_404">
-                <h3 class="h2">Look like you're lost</h3>
+                <h3 class="h2">!!انگار گم شدی</h3>
 
-                <p>the page you are looking for not avaible!</p>
+                <p>صفحه مورد نظر شما در دسترس نیست</p>
 
                 <a href="/" class="link_404">
-                  Go to Home
+                  بریم خونه
                 </a>
               </div>
             </div>
@@ -25,3 +25,5 @@ export default function Page404() {
     </section>
   );
 }
+
+export default Page404;

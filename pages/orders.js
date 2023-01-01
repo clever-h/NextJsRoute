@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-function OrdersPage() {
-  const [orders, setOrders] = useState([]);
+function OrdersPage(props) {
+  const [orders, setOrders] = useState([props.orders]);
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -26,3 +26,15 @@ function OrdersPage() {
 }
 
 export default OrdersPage;
+
+export async function getServerSideProps() {
+  const response = await fetch('http://localhost:5000/orders');
+
+  const responseData = await response.json();
+
+  return {
+    props: {
+      orders: responseData,
+    },
+  };
+}
